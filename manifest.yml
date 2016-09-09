@@ -1,0 +1,14 @@
+applications:
+- path: output/SIHKBWebApp.war
+  memory: 1024M
+  instances: 1
+  domain: mybluemix.net
+  name: SIHKBWebApp
+  host: SIHKBWebApp
+  disk_quota: 1024M
+  services:
+  - sihkb-sso
+  - sihkb-push
+  - sihkb-db
+  - sihkb-mas
+  
